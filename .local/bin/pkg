@@ -1,3 +1,4 @@
+arch-install-scripts
 autoconf
 automake
 base
@@ -5,6 +6,7 @@ bc
 binutils
 bison
 cronie
+efibootmgr
 fakeroot
 file
 findutils
@@ -14,6 +16,7 @@ gawk
 gcc
 gettext
 git
+google-chrome
 grep
 groff
 grub
@@ -21,8 +24,6 @@ gzip
 htop
 icaclient
 intel-ucode
-jupyter-notebook
-lastpass-cli
 libtool
 libxft
 libxinerama
@@ -32,8 +33,6 @@ linux-lts-headers
 m4
 maim
 make
-man-db
-man-pages
 mpv
 ncdu
 neovim
@@ -44,10 +43,8 @@ pkgconf
 powertop
 pulseaudio-alsa
 pulsemixer
-python-pip
 qutebrowser
 ranger
-screenkey
 sed
 slock
 sudo
@@ -63,14 +60,13 @@ unzip
 which
 xclip
 xcompmgr
-xdman
 xdotool
 xf86-video-intel
 xorg-server
 xorg-xinit
 xorg-xsetroot
 xwallpaper
-yay
+yay-git
 youtube-dl
 zathura
 zathura-pdf-mupdf
