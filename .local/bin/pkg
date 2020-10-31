@@ -37,6 +37,7 @@ mpv
 ncdu
 neovim
 networkmanager
+os-prober
 pacman
 patch
 pkgconf
