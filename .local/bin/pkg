@@ -6,7 +6,9 @@ bc
 binutils
 bison
 cronie
+dash
 efibootmgr
+exfat-utils
 fakeroot
 file
 findutils
@@ -37,8 +39,10 @@ mpv
 ncdu
 neovim
 networkmanager
+ntfs-3g
 os-prober
 pacman
+pass
 patch
 pkgconf
 powertop
