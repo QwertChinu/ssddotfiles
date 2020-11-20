@@ -1,5 +1,5 @@
 #!/bin/sh
 
 getSource=$(pacmd list-sinks | grep -e '* index:' | awk '{print $3}')
-[ $1 == "mute" ] && pactl set-sink-mute 0 "toggle" ||\
+[ $1 == "mute" ] && pactl set-sink-mute 0 "toggle" && status ||\
 pactl set-sink-volume $getSource $1

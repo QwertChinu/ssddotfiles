@@ -45,3 +45,6 @@ alias cfg='/usr/bin/git --git-dir=/home/chinu/.cfg/ --work-tree=/home/chinu'
 alias cssh="ssh 'chinu@192.168.1.105'"
 alias kf="xmodmap ~/.local/bin/keys_disable"
 alias fcaps="setxkbmap -option caps:escape"
+alias mb7="sudo mount /dev/sdb7 /mnt && sudo ranger"
+alias ma7="sudo mount /dev/sda7 /mnt && sudo ranger"
+alias smc="sudo mount /dev/sdc1 /media && r"

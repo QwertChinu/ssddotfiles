@@ -20,13 +20,13 @@ pkg(){
 volume(){
     [ "$(pulsemixer --get-mute)" = "1" ] && printf "Mute" && exit
     vol=$(pulsemixer --get-volume | awk '{print $1}')
-    echo -e "V$vol%"
+    echo -e "V$vol"
 }
 
 battery(){
     capacity=$(cat /sys/class/power_supply/"BAT0"/capacity)
     status=$(cat /sys/class/power_supply/"BAT0"/status)
-    echo -e "${status:0:1}$capacity%"
+    echo -e "${status:0:1}$capacity"
 }
 
 disk(){
@@ -38,5 +38,11 @@ ram(){
     echo -e $(free -h | awk '/^Mem:/ {print $3 "/" $2}')
 }
 
-xsetroot -name " $(ram) $(hot) $(battery) $(temp) $(disk) $(pkg) $(volume) \
+internet(){
+	var=$(cat /sys/class/net/w*/operstate 2>/dev/null)
+	var=${var^}
+	echo -e ${var:0:1}
+}
+
+xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
 $(date +"%a %m/%d %H:%M")"

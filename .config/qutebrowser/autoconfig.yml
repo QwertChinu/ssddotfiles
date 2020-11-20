@@ -6,6 +6,10 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      normal:
+        X: hint links spawn --detach mpv {hint-url}
   content.geolocation:
     https://www.google.co.in: false
   content.notifications:
