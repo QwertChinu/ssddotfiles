@@ -1,3 +1,4 @@
+anki
 arch-install-scripts
 autoconf
 automake
@@ -50,8 +51,10 @@ pulseaudio-alsa
 pulsemixer
 qutebrowser
 ranger
+scid_vs_pc
 sed
 slock
+stockfish-git
 sudo
 sxiv
 texinfo
