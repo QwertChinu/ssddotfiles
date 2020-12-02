@@ -7,7 +7,6 @@ bc
 binutils
 bison
 cronie
-dash
 efibootmgr
 exfat-utils
 fakeroot
@@ -51,10 +50,8 @@ pulseaudio-alsa
 pulsemixer
 qutebrowser
 ranger
-scid_vs_pc
 sed
 slock
-stockfish-git
 sudo
 sxiv
 texinfo
