@@ -7,6 +7,7 @@ bc
 binutils
 bison
 cronie
+dropbox
 efibootmgr
 exfat-utils
 fakeroot
@@ -18,7 +19,6 @@ gawk
 gcc
 gettext
 git
-google-chrome
 grep
 groff
 grub
@@ -62,13 +62,14 @@ ttf-jetbrains-mono
 unclutter
 unrar
 unzip
-virtualbox
 virtualbox-guest-utils
 which
+wine
 xclip
 xcompmgr
 xdotool
 xf86-video-intel
+xmahjongg
 xorg-server
 xorg-xinit
 xorg-xsetroot
