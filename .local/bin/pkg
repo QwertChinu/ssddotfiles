@@ -19,6 +19,7 @@ gawk
 gcc
 gettext
 git
+google-chrome
 grep
 groff
 grub
@@ -54,6 +55,7 @@ sed
 slock
 sudo
 sxiv
+teams
 texinfo
 timeshift
 tlp
