@@ -1,3 +1,4 @@
+alsa-utils
 anki
 arch-install-scripts
 autoconf
@@ -45,6 +46,7 @@ os-prober
 pacman
 pass
 patch
+pavucontrol
 pkgconf
 powertop
 pulseaudio-alsa
@@ -55,6 +57,7 @@ sed
 slock
 sudo
 sxiv
+teams
 texinfo
 timeshift
 tlp
