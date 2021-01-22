@@ -45,4 +45,4 @@ internet(){
 }
 
 xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
-$(date +"%a %m/%d %H:%M")"
+$(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
