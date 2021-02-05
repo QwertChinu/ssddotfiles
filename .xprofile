@@ -6,4 +6,4 @@ xwallpaper --zoom ~/.arch.jpg
 status_60_sec_loop &
 battery &
 #sudo powertop --auto-tune &
-( sleep 120; sudo /usr/bin/pacman -Syyy && status) &
+( sleep 120; sudo /usr/bin/yay -Syyy && status) &
