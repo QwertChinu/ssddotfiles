@@ -38,6 +38,7 @@ linux-lts-headers
 m4
 maim
 make
+man-db
 mpv
 ncdu
 neovim
@@ -59,6 +60,7 @@ sed
 slock
 sudo
 sxiv
+syncthing
 teams
 texinfo
 timeshift

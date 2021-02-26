@@ -10,6 +10,7 @@ PS1='[\u@\h \W]\$ '
 set -o vi
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export MANPAGER="nvim -c 'set ft=man' -"
 set editing-mode vi
 set show-mode-in-prompt on
 set vi-ins-mode-string +
