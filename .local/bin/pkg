@@ -28,6 +28,7 @@ gzip
 htop
 icaclient
 intel-ucode
+jmtpfs
 lf
 libtool
 libxft
@@ -56,6 +57,7 @@ pulsemixer
 qutebrowser
 ranger
 reflector
+screenkey
 sed
 slock
 sudo
