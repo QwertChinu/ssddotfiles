@@ -1,6 +1,5 @@
 alsa-utils
 anki
-arch-install-scripts
 autoconf
 automake
 base
@@ -29,7 +28,6 @@ htop
 icaclient
 intel-ucode
 jmtpfs
-lf
 libtool
 libxft
 libxinerama
@@ -45,7 +43,6 @@ ncdu
 neovim
 networkmanager
 ntfs-3g
-os-prober
 pacman
 pass
 patch
@@ -57,12 +54,10 @@ pulsemixer
 qutebrowser
 ranger
 reflector
-screenkey
 sed
 slock
 sudo
 sxiv
-syncthing
 teams
 texinfo
 timeshift
