@@ -42,7 +42,7 @@ alias tsmr="transmission-remote -l | grep 100\% | grep Done | awk '{print $1}' |
 alias vrc="v ~/.config/nvim/init.vim"
 alias mo="xset dpms force off"
 alias fboot="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias play="mpv --ytdl-format=137+251"
+alias play="mpv https://www.youtube.com/watch?v=wvIbG6zMbME"
 alias cfg='/usr/bin/git --git-dir=/home/chinu/.cfg/ --work-tree=/home/chinu'
 alias cssh="ssh 'chinu@192.168.1.105'"
 alias kf="xmodmap ~/.local/bin/keys_disable"
@@ -50,4 +50,4 @@ alias fcaps="setxkbmap -option caps:escape"
 alias mb7="sudo mount /dev/sdb7 /mnt && sudo ranger ~/Downloads/video/"
 alias ma7="sudo mount /dev/sda7 /mnt && sudo ranger ~/Downloads/video/"
 alias smc="sudo mount /dev/sdc1 /media && r"
-alias play="mpv https://www.youtube.com/watch?v=1AEWp1hrphA"
+
