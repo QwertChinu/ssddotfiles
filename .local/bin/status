@@ -7,31 +7,32 @@ hot(){
 temp(){
 	cache=$(du -h ~/.cache/ | tail -1 | awk '{print $1}')
 	pkg=$(du -h /var/cache/pacman/pkg/ | awk '{print $1}')
-	echo -e "$cache $pkg"
+	echo -e "$cache $pkg"
 }
 pkg(){
     upkg=$(yay -Qu | grep -v "\[ignored\]" | wc -l | sed -e "s/^0$//g")
     krnl=$(yay -Qu | grep "linux-lts" | wc -l | sed -e "s/^0$//g")
     [[ "$upkg" -eq "" ]] && upkg="U"
     [[ "$krnl" -ne "" ]] && krnl="K" || krnl="P"
-    echo -e "$krnl$upkg"
+    echo -e "$krnl$upkg"
 } 
 
 volume(){
-    [ "$(pulsemixer --get-mute)" = "1" ] && printf "Mute" && exit
+    [ "$(pulsemixer --get-mute)" = "1" ] && printf "Mute" && exit
     vol=$(pulsemixer --get-volume | awk '{print $1}')
-    echo -e "V$vol"
+    echo -e "$vol"
 }
 
 battery(){
     capacity=$(cat /sys/class/power_supply/"BAT0"/capacity)
-    status=$(cat /sys/class/power_supply/"BAT0"/status)
-    echo -e "${status:0:1}$capacity"
+    status1=$(cat /sys/class/power_supply/"BAT0"/status)
+	[[ ${status1:0:1} == "C" ]] && status="" || status=""
+    echo -e "${status}$capacity"
 }
 
 disk(){
     sizeR=$(df | grep /$ | awk '{print $5}')
-    echo -e "R$sizeR"
+    echo -e "$sizeR"
 }
 
 ram(){
@@ -44,5 +45,5 @@ internet(){
 	echo -e ${var:0:1}
 }
 
-xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
-$(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
+xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
+$(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
