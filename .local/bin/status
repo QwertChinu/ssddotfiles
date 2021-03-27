@@ -10,8 +10,8 @@ temp(){
 	echo -e "$cache $pkg"
 }
 pkg(){
-    upkg=$(yay -Qu | grep -v "\[ignored\]" | wc -l | sed -e "s/^0$//g")
-    krnl=$(yay -Qu | grep "linux-lts" | wc -l | sed -e "s/^0$//g")
+    upkg=$(pacman -Qu | grep -v "\[ignored\]" | wc -l | sed -e "s/^0$//g")
+    krnl=$(pacman -Qu | grep "linux-lts" | wc -l | sed -e "s/^0$//g")
     [[ "$upkg" -eq "" ]] && upkg="U"
     [[ "$krnl" -ne "" ]] && krnl="K" || krnl="P"
     echo -e "$krnl$upkg"
@@ -46,4 +46,4 @@ internet(){
 }
 
 xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
-$(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
+ $(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
