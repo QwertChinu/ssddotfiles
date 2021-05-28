@@ -1,8 +1,8 @@
 #!/bin/sh
 hot(){
-	core0=$(sensors | grep "Core 0" | awk '{print $3}' | sed s/.0//g | sed s/+//g)
-	core1=$(sensors | grep "Core 1" | awk '{print $3}' | sed s/.0//g | sed s/+//g)
-	echo -e "$core0 $core1"
+	core0=$(sensors | grep "Core 0" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
+	core1=$(sensors | grep "Core 1" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
+	echo -e "$core0$core1"
 }
 temp(){
 	cache=$(du -h ~/.cache/ | tail -1 | awk '{print $1}')
@@ -45,5 +45,5 @@ internet(){
 	echo -e ${var:0:1}
 }
 
-xsetroot -name " $(ram) $(battery) $(internet) $(temp) $(disk) $(pkg) $(volume) \
+xsetroot -name " $(ram) $(battery) $(hot) $(internet) $(temp) $(disk) $(pkg) $(volume) \
  $(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
