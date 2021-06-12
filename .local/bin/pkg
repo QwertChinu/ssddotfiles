@@ -29,6 +29,7 @@ htop
 icaclient
 intel-ucode
 jmtpfs
+lib32-libpulse
 libtool
 libxft
 libxinerama
@@ -39,7 +40,6 @@ m4
 maim
 make
 man-db
-mari0
 mpv
 ncdu
 neovim
@@ -62,13 +62,11 @@ sudo
 sxiv
 teams
 texinfo
-thunar
 timeshift
 tlp
 transmission-cli
 ttf-font-awesome
 ttf-jetbrains-mono
-tumbler
 unclutter
 unrar
 unzip
@@ -82,7 +80,7 @@ xorg-server
 xorg-xinit
 xorg-xsetroot
 xwallpaper
-yay-git
+yay
 youtube-dl
 zathura
 zathura-pdf-mupdf

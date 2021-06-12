@@ -1,4 +1,17 @@
 #!/bin/sh
+
+torrent(){
+	t_status=$(transmission-remote -l | grep % |
+	sed " # The letters are for sorting and will not appear.
+	s/.*Stopped.*/A St/;
+	s/.*Seeding.*/Z Se/;
+	s/.*100%.*/N Dn/;
+	s/.*Idle.*/B Id/;
+	s/.*Uploading.*/L Up/;
+	s/.*%.*/M Do/" |
+		sort -h | uniq -c | awk '{print $3 $1}' | paste -sd ' ' -)
+	echo -e "$t_status"
+}
 hot(){
 	core0=$(sensors | grep "Core 0" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
 	core1=$(sensors | grep "Core 1" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
@@ -45,5 +58,5 @@ internet(){
 	echo -e ${var:0:1}
 }
 
-xsetroot -name " $(ram) $(battery) $(hot) $(internet) $(temp) $(disk) $(pkg) $(volume) \
+xsetroot -name " $(torrent) $(ram) $(battery) $(hot) $(internet) $(temp) $(disk) $(pkg) $(volume) \
  $(date +"%a %m/%d %H:%M") $(TZ=Australia/Sydney date +"%H:%M")"
