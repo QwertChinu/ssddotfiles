@@ -50,4 +50,4 @@ alias fcaps="setxkbmap -option caps:escape"
 alias mb7="sudo mount /dev/sdb7 /mnt && sudo ranger ~/Downloads/video/"
 alias ma7="sudo mount /dev/sda7 /mnt && sudo ranger ~/Downloads/video/"
 alias smc="sudo mount /dev/sdc1 /media && r"
-
+alias spwdcs="export PASSWORD_STORE_CHARACTER_SET=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"

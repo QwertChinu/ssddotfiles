@@ -1,5 +1,6 @@
 alsa-utils
 anki
+arch-install-scripts
 autoconf
 automake
 base
@@ -21,6 +22,7 @@ gcc
 gettext
 git
 google-chrome
+gptfdisk
 grep
 groff
 grub
