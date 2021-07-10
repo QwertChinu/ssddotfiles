@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sizeR=$(df | grep /$ | awk '{print $5}')
+echo -e "$sizeR"

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+capacity=$(cat /sys/class/power_supply/"BAT0"/capacity)
+status1=$(cat /sys/class/power_supply/"BAT0"/status)
+[[ ${status1:0:1} == "C" ]] && status="" || status=""
+echo -e "${status}$capacity"

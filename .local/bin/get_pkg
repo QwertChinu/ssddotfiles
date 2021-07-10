@@ -1,0 +1,7 @@
+#!/bin/sh
+
+upkg=$(yay -Qu | grep -v "\[ignored\]" | wc -l | sed -e "s/^0$//g")
+krnl=$(yay -Qu | grep "linux-lts" | wc -l | sed -e "s/^0$//g")
+[[ "$upkg" -eq "" ]] && upkg="U"
+[[ "$krnl" -ne "" ]] && krnl="K" || krnl="P"
+echo -e "$krnl$upkg"

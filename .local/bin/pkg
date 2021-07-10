@@ -1,6 +1,7 @@
 alsa-utils
 anki
 arch-install-scripts
+auto-cpufreq
 autoconf
 automake
 base
@@ -64,6 +65,7 @@ sudo
 sxiv
 teams
 texinfo
+thunar
 timeshift
 tlp
 transmission-cli

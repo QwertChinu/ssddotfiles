@@ -1,0 +1,7 @@
+#!/bin/sh
+
+sudo -i
+mkdir -p ~/mtp
+jmtpfs ~/mtp/
+mount /dev/sdb7 /mnt
+rsync -aAXv ~/mtp/SD\ card/DCIM/ /mnt/Pictures/phone-realme7/ --dry-run

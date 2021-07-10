@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cache=$(du -h ~/.cache/ | tail -1 | awk '{print $1}')
+pkg=$(du -h /var/cache/pacman/pkg/ | awk '{print $1}')
+echo -e "$cache $pkg"
