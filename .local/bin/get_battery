@@ -3,4 +3,9 @@
 capacity=$(cat /sys/class/power_supply/"BAT0"/capacity)
 status1=$(cat /sys/class/power_supply/"BAT0"/status)
 [[ ${status1:0:1} == "C" ]] && status="" || status=""
+
+[[ ( "$capacity" -gt "95"  &&  "$status1" == "Charging" || "$status1" == "Full")\
+|| ( "$capacity" -lt "20"  &&  "$status1" == "Discharging" ) ]] && \
+mpv ~/.cache/bell.oga > /dev/null
+
 echo -e "${status}$capacity"

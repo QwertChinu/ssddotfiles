@@ -9,4 +9,4 @@ do
     mpv ~/.cache/bell.oga > /dev/null
 
     sleep 5
-done &
+done
