@@ -1,5 +1,7 @@
 #!/bin/sh
 
-core0=$(sensors | grep "Core 0" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
-core1=$(sensors | grep "Core 1" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
-echo -e "$core0$core1"
+#core0=$(sensors | grep "Core 0" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
+#core1=$(sensors | grep "Core 1" | awk '{print $3}' | sed s/.0//g | sed s/+//g | sed s/C//g)
+#echo -e "$core0$core1"
+
+echo -e "$(sensors | grep "Package id 0" | awk '{print $4}' | sed 's/.0//g; s/+//g; s/C//g')"
