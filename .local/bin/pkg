@@ -1,3 +1,4 @@
+abiword
 alsa-utils
 anki
 arch-install-scripts
@@ -31,6 +32,7 @@ gzip
 htop
 icaclient
 intel-ucode
+iptables-nft
 jmtpfs
 lib32-libpulse
 libtool
@@ -73,6 +75,7 @@ ttf-jetbrains-mono
 unclutter
 unrar
 unzip
+virtualbox
 which
 wine
 xclip

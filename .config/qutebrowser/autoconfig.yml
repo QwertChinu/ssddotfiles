@@ -12,7 +12,7 @@ settings:
         X: hint links spawn --detach mpv {hint-url}
   content.geolocation:
     https://www.google.co.in: false
-  content.notifications:
+  content.notifications.enabled:
     https://subdl.com: false
     https://tomato-timer.com: false
     https://www.hindustantimes.com: false
@@ -20,6 +20,10 @@ settings:
     https://www1.thepiratebay3.to: false
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: false
+  fonts.default_size:
+    global: 12pt
+  fonts.hints:
+    global: bold 16pt default_family
   url.searchengines:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
