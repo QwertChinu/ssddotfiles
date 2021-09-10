@@ -1,6 +1,4 @@
-abiword
 alsa-utils
-anki
 arch-install-scripts
 auto-cpufreq
 autoconf
@@ -19,12 +17,12 @@ file
 findutils
 firefox
 flex
+fzf
 gawk
 gcc
 gettext
 git
 google-chrome
-gptfdisk
 grep
 groff
 grub
