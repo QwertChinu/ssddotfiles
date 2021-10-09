@@ -5,9 +5,11 @@ auto-cpufreq
 autoconf
 automake
 base
+bash-completion
 bc
 binutils
 bison
+bluez-utils
 cronie
 dosfstools
 dropbox
@@ -53,6 +55,7 @@ pacman
 pass
 patch
 pavucontrol
+pipewire-pulse
 pkgconf
 powertop
 pulseaudio-alsa
