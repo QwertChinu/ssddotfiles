@@ -48,6 +48,7 @@ make
 man-db
 mpv
 ncdu
+neofetch
 neovim
 networkmanager
 ntfs-3g
