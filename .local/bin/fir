@@ -1,0 +1,19 @@
+#!/bin/sh
+
+serial_name="sonyliv.com/shows/fir"
+bkm_file="$HOME/.config/qutebrowser/bookmarks/urls"
+
+# Get the latest bookmarked url
+lbkm=$(grep $serial_name $bkm_file | tail -1 | awk '{print $1}')
+
+# Removing old bookmarks
+sed -i "/$serial_name/d" $bkm_file
+
+# Appending the last bookmarked url
+echo $lbkm >> $bkm_file
+
+# Setting dpms off
+xset s off && xset -dpms
+
+# Launching browser
+qutebrowser $lbkm
