@@ -17,6 +17,7 @@ set vi-ins-mode-string +
 set vi-cmd-mode-string :
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x dwm >/dev/null && exec startx 
 
+neofetch
 alias v="nvim"
 alias brc="v ~/.bashrc"
 alias p="sudo pacman"
