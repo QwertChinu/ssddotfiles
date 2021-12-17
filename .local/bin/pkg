@@ -1,3 +1,4 @@
+abiword
 alsa-utils
 amazon-workspaces-bin
 arch-install-scripts
@@ -78,6 +79,9 @@ ttf-jetbrains-mono
 unclutter
 unrar
 unzip
+virtualbox
+virtualbox-guest-iso
+virtualbox-guest-utils
 which
 wine
 xclip
