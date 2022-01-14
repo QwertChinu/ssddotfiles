@@ -43,6 +43,7 @@ libxinerama
 linux-firmware
 linux-lts
 linux-lts-headers
+linux-wifi-hotspot
 m4
 maim
 make
