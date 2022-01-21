@@ -11,9 +11,11 @@ bc
 binutils
 bison
 bluez-utils
+bridge-utils
 cronie
 dosfstools
 dropbox
+edk2-ovmf
 efibootmgr
 exfat-utils
 fakeroot
@@ -54,6 +56,7 @@ neofetch
 neovim
 networkmanager
 ntfs-3g
+openbsd-netcat
 pacman
 pass
 patch
@@ -63,6 +66,8 @@ pkgconf
 powertop
 pulseaudio-alsa
 pulsemixer
+qemu
+qemu-arch-extra
 qutebrowser
 ranger
 reflector
@@ -80,6 +85,8 @@ ttf-jetbrains-mono
 unclutter
 unrar
 unzip
+vde2
+virt-manager
 virtualbox
 virtualbox-guest-iso
 virtualbox-guest-utils
