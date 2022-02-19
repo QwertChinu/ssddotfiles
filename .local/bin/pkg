@@ -86,9 +86,6 @@ unrar
 unzip
 vde2
 virt-manager
-virtualbox
-virtualbox-guest-iso
-virtualbox-guest-utils
 which
 wine
 xclip
