@@ -44,7 +44,7 @@ alias tsmr="transmission-remote -l | grep 100\% | grep Done | awk '{print $1}' |
 alias vrc="v ~/.config/nvim/init.vim"
 alias mo="xset dpms force off"
 alias fboot="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias play="mpv --no-video https://www.youtube.com/watch?v=zw48SrGcTwQ"
+alias play="mpv --ytdl-format=137+251"
 alias cfg='/usr/bin/git --git-dir=/home/chinu/.cfg/ --work-tree=/home/chinu'
 alias cssh="ssh 'chinu@192.168.1.105'"
 alias kf="xmodmap ~/.local/bin/keys_disable"
