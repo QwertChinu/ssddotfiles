@@ -11,7 +11,9 @@ binutils
 bison
 bluez-utils
 bridge-utils
+cdrtools
 cronie
+dnsmasq
 dosfstools
 dropbox
 edk2-ovmf
@@ -72,6 +74,7 @@ ranger
 reflector
 sed
 slock
+spice-vdagent
 sudo
 sxiv
 teams
