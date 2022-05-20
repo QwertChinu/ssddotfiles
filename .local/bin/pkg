@@ -67,8 +67,8 @@ pkgconf
 powertop
 pulseaudio-alsa
 pulsemixer
-qemu
-qemu-arch-extra
+qemu-desktop
+qemu-emulators-full
 qutebrowser
 ranger
 reflector
