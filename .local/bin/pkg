@@ -1,5 +1,4 @@
 alsa-utils
-amazon-workspaces-bin
 arch-install-scripts
 auto-cpufreq
 autoconf
@@ -35,7 +34,6 @@ groff
 grub
 gzip
 htop
-icaclient
 intel-ucode
 iptables-nft
 jmtpfs
@@ -77,7 +75,6 @@ slock
 spice-vdagent
 sudo
 sxiv
-teams
 texinfo
 timeshift
 tlp
