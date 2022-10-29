@@ -11,6 +11,14 @@ set -o vi
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export MANPAGER="nvim -c 'set ft=man' -"
+
+export SPARK_HOME='/home/chinu/spark-3.3.0-bin-hadoop3'
+export PATH=$SPARK_HOME:$PATH
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON=python3
+
 set editing-mode vi
 set show-mode-in-prompt on
 set vi-ins-mode-string +
