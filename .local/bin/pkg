@@ -39,6 +39,7 @@ iptables-nft
 jmtpfs
 lib32-libpulse
 libtool
+libxcrypt-compat
 libxft
 libxinerama
 linux-firmware
@@ -55,6 +56,7 @@ neovim
 networkmanager
 ntfs-3g
 openbsd-netcat
+oracle-xe
 pacman
 paru
 pass
@@ -62,6 +64,7 @@ patch
 pavucontrol
 pipewire-pulse
 pkgconf
+postman-bin
 powertop
 pulseaudio-alsa
 pulsemixer
@@ -87,6 +90,7 @@ unrar
 unzip
 vde2
 virt-manager
+wget
 which
 wine
 xclip
