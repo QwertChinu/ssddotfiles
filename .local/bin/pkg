@@ -38,6 +38,7 @@ intel-ucode
 iptables-nft
 jmtpfs
 lib32-libpulse
+libidn11
 libtool
 libxcrypt-compat
 libxft
