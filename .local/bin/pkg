@@ -21,7 +21,6 @@ exfat-utils
 fakeroot
 file
 findutils
-firefox
 flex
 fzf
 gawk
@@ -69,8 +68,6 @@ postman-bin
 powertop
 pulseaudio-alsa
 pulsemixer
-qemu-desktop
-qemu-emulators-full
 qutebrowser
 ranger
 reflector
