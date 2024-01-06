@@ -56,7 +56,6 @@ neovim
 networkmanager
 ntfs-3g
 openbsd-netcat
-oracle-xe
 pacman
 paru
 pass
@@ -64,14 +63,10 @@ patch
 pavucontrol
 pipewire-pulse
 pkgconf
-postman-bin
 powertop
-pulseaudio-alsa
-pulsemixer
 qutebrowser
 ranger
 reflector
-scala
 sed
 slock
 snowflake-client
@@ -88,8 +83,6 @@ unclutter
 unrar
 unzip
 vde2
-virt-manager
-vlc
 wget
 which
 wine

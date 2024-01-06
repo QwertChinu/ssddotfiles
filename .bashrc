@@ -63,3 +63,5 @@ alias smc="sudo mount /dev/sdc1 /media && sudo ranger"
 alias fm="xset s off && xset -dpms"
 se() { du -a ~/.local/bin/ | awk '{print $2}' | fzf | xargs -r nvim; }
 sm() { sudo mount /dev/sdb7 /mnt && du -a /mnt/Movies/ | awk '{print $2}' | fzf | xargs -r mpv; }
+alias sma="sudo mount /dev/sda3 /mnt"
+alias updb="updblocks 36 && updblocks 37 && updblocks 38"

@@ -1,4 +1,7 @@
 #!/bin/sh
+sudo rfkill block bluetooth
+sudo rfkill unblock bluetooth
+sudo systemctl stop bluetooth.service
 sudo systemctl start bluetooth
 bluetoothctl power on
 bluetoothctl connect 84:0F:2A:1F:E9:74
